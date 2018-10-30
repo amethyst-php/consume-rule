@@ -16,6 +16,8 @@ class CreateConsumeRulesTable extends Migration
             $table->increments('id');
             $table->string('name')->unique();
             $table->text('description')->nullable();
+            $table->string('class_name');
+            $table->text('payload')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

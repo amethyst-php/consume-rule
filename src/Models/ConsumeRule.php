@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Railken\Amethyst\Common\ConfigurableModel;
 use Railken\Lem\Contracts\EntityContract;
 
+/**
+ * @property object $payload
+ */
 class ConsumeRule extends Model implements EntityContract
 {
     use SoftDeletes, ConfigurableModel;
