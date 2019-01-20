@@ -35,11 +35,11 @@ return [
     'http' => [
         'admin' => [
             'consume-rule' => [
-                'enabled'     => true,
-                'controller'  => Railken\Amethyst\Http\Controllers\Admin\ConsumeRulesController::class,
-                'router'      => [
-                    'as'        => 'consume-rule.',
-                    'prefix'    => '/consume-rules',
+                'enabled'    => true,
+                'controller' => Railken\Amethyst\Http\Controllers\Admin\ConsumeRulesController::class,
+                'router'     => [
+                    'as'     => 'consume-rule.',
+                    'prefix' => '/consume-rules',
                 ],
             ],
         ],
