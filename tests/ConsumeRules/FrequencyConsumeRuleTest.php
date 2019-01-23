@@ -24,12 +24,14 @@ class FrequencyConsumeRuleTest extends BaseTest
 
         $rule = new FrequencyConsumeRule();
 
-        $start = (new \DateTime())->modify('-1 month');
-        $end = (new \DateTime());
+        $this->assertEquals(1, $rule->calculate($resource, ['start' => $this->now()->modify('-1 month'), 'end' => $this->now()]));
+        $this->assertEquals(2, $rule->calculate($resource, ['start' => $this->now()->modify('-2 month'), 'end' => $this->now()]));
+        $this->assertEquals(null, $rule->calculate($resource, ['start' => $this->now()->modify('-15 days'), 'end' => $this->now()]));
+        $this->assertEquals(24, $rule->calculate($resource, ['start' => $this->now()->modify('-2 years'), 'end' => $this->now()]));
+    }
 
-        $this->assertEquals(1, $rule->calculate($resource, ['start' => (new \DateTime())->modify('-1 month'), 'end' => $end]));
-        $this->assertEquals(2, $rule->calculate($resource, ['start' => (new \DateTime())->modify('-2 month'), 'end' => $end]));
-        $this->assertEquals(null, $rule->calculate($resource, ['start' => (new \DateTime())->modify('-15 days'), 'end' => $end]));
-        $this->assertEquals(24, $rule->calculate($resource, ['start' => (new \DateTime())->modify('-2 years'), 'end' => $end]));
+    public function now()
+    {
+        return (new \DateTime())->setTime(00, 00, 00, 00);
     }
 }
