@@ -30,9 +30,10 @@ class ExpressionConsumeRuleTest extends BaseTest
         $this->expectException(Exceptions\ConsumeRuleWrongPayloadException::class);
         $manager = new ConsumeRuleManager();
 
-        $resource = $manager->createOrFail(ConsumeRuleFaker::make()->parameters()
-            ->set('class_name', ExpressionConsumeRule::class)
-            ->set('payload', [])
+        $resource = $manager->createOrFail(
+            ConsumeRuleFaker::make()->parameters()
+                ->set('class_name', ExpressionConsumeRule::class)
+                ->set('payload', [])
         )->getResource();
 
         $rule = new ExpressionConsumeRule();
@@ -44,9 +45,10 @@ class ExpressionConsumeRuleTest extends BaseTest
         $this->expectException(Exceptions\ConsumeRuleWrongOptionsException::class);
         $manager = new ConsumeRuleManager();
 
-        $resource = $manager->createOrFail(ConsumeRuleFaker::make()->parameters()
-            ->set('class_name', ExpressionConsumeRule::class)
-            ->set('payload', ['expression' => 'x * (v / 100 + 1)'])
+        $resource = $manager->createOrFail(
+            ConsumeRuleFaker::make()->parameters()
+                ->set('class_name', ExpressionConsumeRule::class)
+                ->set('payload', ['expression' => 'x * (v / 100 + 1)'])
         )->getResource();
 
         $rule = new ExpressionConsumeRule();
