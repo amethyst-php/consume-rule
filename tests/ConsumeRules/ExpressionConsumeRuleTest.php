@@ -1,12 +1,12 @@
 <?php
 
-namespace Railken\Amethyst\Tests\ConsumeRules;
+namespace Amethyst\Tests\ConsumeRules;
 
-use Railken\Amethyst\ConsumeRules\ExpressionConsumeRule;
-use Railken\Amethyst\Exceptions;
-use Railken\Amethyst\Fakers\ConsumeRuleFaker;
-use Railken\Amethyst\Managers\ConsumeRuleManager;
-use Railken\Amethyst\Tests\BaseTest;
+use Amethyst\ConsumeRules\ExpressionConsumeRule;
+use Amethyst\Exceptions;
+use Amethyst\Fakers\ConsumeRuleFaker;
+use Amethyst\Managers\ConsumeRuleManager;
+use Amethyst\Tests\BaseTest;
 
 class ExpressionConsumeRuleTest extends BaseTest
 {

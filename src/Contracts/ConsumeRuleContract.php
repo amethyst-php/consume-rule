@@ -1,8 +1,8 @@
 <?php
 
-namespace Railken\Amethyst\Contracts;
+namespace Amethyst\Contracts;
 
-use Railken\Amethyst\Models\ConsumeRule;
+use Amethyst\Models\ConsumeRule;
 
 interface ConsumeRuleContract
 {

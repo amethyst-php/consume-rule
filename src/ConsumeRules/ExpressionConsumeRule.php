@@ -1,12 +1,12 @@
 <?php
 
-namespace Railken\Amethyst\ConsumeRules;
+namespace Amethyst\ConsumeRules;
 
 use MathParser\Interpreting\Evaluator;
 use MathParser\StdMathParser;
-use Railken\Amethyst\Contracts\ConsumeRuleContract;
-use Railken\Amethyst\Exceptions;
-use Railken\Amethyst\Models\ConsumeRule;
+use Amethyst\Contracts\ConsumeRuleContract;
+use Amethyst\Exceptions;
+use Amethyst\Models\ConsumeRule;
 
 class ExpressionConsumeRule implements ConsumeRuleContract
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Railken\Amethyst\Schemas;
+namespace Amethyst\Schemas;
 
-use Railken\Amethyst\Contracts\ConsumeRuleContract;
+use Amethyst\Contracts\ConsumeRuleContract;
 use Railken\Lem\Attributes;
 use Railken\Lem\Schema;
 

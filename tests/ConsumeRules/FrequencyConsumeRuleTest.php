@@ -1,11 +1,11 @@
 <?php
 
-namespace Railken\Amethyst\Tests\ConsumeRules;
+namespace Amethyst\Tests\ConsumeRules;
 
-use Railken\Amethyst\ConsumeRules\FrequencyConsumeRule;
-use Railken\Amethyst\Fakers\ConsumeRuleFaker;
-use Railken\Amethyst\Managers\ConsumeRuleManager;
-use Railken\Amethyst\Tests\BaseTest;
+use Amethyst\ConsumeRules\FrequencyConsumeRule;
+use Amethyst\Fakers\ConsumeRuleFaker;
+use Amethyst\Managers\ConsumeRuleManager;
+use Amethyst\Tests\BaseTest;
 
 class FrequencyConsumeRuleTest extends BaseTest
 {

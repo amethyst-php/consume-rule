@@ -13,14 +13,14 @@ return [
         'consume-rule' => [
             'table'      => 'amethyst_consume_rules',
             'comment'    => 'ConsumeRule',
-            'model'      => Railken\Amethyst\Models\ConsumeRule::class,
-            'schema'     => Railken\Amethyst\Schemas\ConsumeRuleSchema::class,
-            'repository' => Railken\Amethyst\Repositories\ConsumeRuleRepository::class,
-            'serializer' => Railken\Amethyst\Serializers\ConsumeRuleSerializer::class,
-            'validator'  => Railken\Amethyst\Validators\ConsumeRuleValidator::class,
-            'authorizer' => Railken\Amethyst\Authorizers\ConsumeRuleAuthorizer::class,
-            'faker'      => Railken\Amethyst\Fakers\ConsumeRuleFaker::class,
-            'manager'    => Railken\Amethyst\Managers\ConsumeRuleManager::class,
+            'model'      => Amethyst\Models\ConsumeRule::class,
+            'schema'     => Amethyst\Schemas\ConsumeRuleSchema::class,
+            'repository' => Amethyst\Repositories\ConsumeRuleRepository::class,
+            'serializer' => Amethyst\Serializers\ConsumeRuleSerializer::class,
+            'validator'  => Amethyst\Validators\ConsumeRuleValidator::class,
+            'authorizer' => Amethyst\Authorizers\ConsumeRuleAuthorizer::class,
+            'faker'      => Amethyst\Fakers\ConsumeRuleFaker::class,
+            'manager'    => Amethyst\Managers\ConsumeRuleManager::class,
         ],
     ],
 
@@ -36,7 +36,7 @@ return [
         'admin' => [
             'consume-rule' => [
                 'enabled'    => true,
-                'controller' => Railken\Amethyst\Http\Controllers\Admin\ConsumeRulesController::class,
+                'controller' => Amethyst\Http\Controllers\Admin\ConsumeRulesController::class,
                 'router'     => [
                     'as'     => 'consume-rule.',
                     'prefix' => '/consume-rules',

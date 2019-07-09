@@ -1,9 +1,9 @@
 <?php
 
-namespace Railken\Amethyst\ConsumeRules;
+namespace Amethyst\ConsumeRules;
 
-use Railken\Amethyst\Contracts\ConsumeRuleContract;
-use Railken\Amethyst\Models\ConsumeRule;
+use Amethyst\Contracts\ConsumeRuleContract;
+use Amethyst\Models\ConsumeRule;
 
 class BaseConsumeRule implements ConsumeRuleContract
 {
