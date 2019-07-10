@@ -2,11 +2,11 @@
 
 namespace Amethyst\ConsumeRules;
 
-use MathParser\Interpreting\Evaluator;
-use MathParser\StdMathParser;
 use Amethyst\Contracts\ConsumeRuleContract;
 use Amethyst\Exceptions;
 use Amethyst\Models\ConsumeRule;
+use MathParser\Interpreting\Evaluator;
+use MathParser\StdMathParser;
 
 class ExpressionConsumeRule implements ConsumeRuleContract
 {

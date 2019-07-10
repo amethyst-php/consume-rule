@@ -2,11 +2,11 @@
 
 namespace Amethyst\ConsumeRules;
 
-use DateInterval;
-use MathParser\StdMathParser;
 use Amethyst\Contracts\ConsumeRuleContract;
 use Amethyst\Exceptions;
 use Amethyst\Models\ConsumeRule;
+use DateInterval;
+use MathParser\StdMathParser;
 
 class FrequencyConsumeRule implements ConsumeRuleContract
 {
