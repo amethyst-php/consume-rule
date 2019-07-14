@@ -18,7 +18,7 @@ class ExpressionConsumeRule implements ConsumeRuleContract
      *
      * @return float
      */
-    public function calculate(ConsumeRule $consumeRule, array $options = [])
+    public function calculate(ConsumeRule $consumeRule, array $options = []): float
     {
         $payload = $consumeRule->payload;
 

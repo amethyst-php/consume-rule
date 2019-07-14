@@ -12,7 +12,7 @@ interface ConsumeRuleContract
      * @param ConsumeRule $consumeRule
      * @param array       $options
      *
-     * @return array
+     * @return float
      */
-    public function calculate(ConsumeRule $consumeRule, array $options = []);
+    public function calculate(ConsumeRule $consumeRule, array $options = []): float;
 }

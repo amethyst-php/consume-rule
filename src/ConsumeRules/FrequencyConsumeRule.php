@@ -16,9 +16,9 @@ class FrequencyConsumeRule implements ConsumeRuleContract
      * @param ConsumeRule $consumeRule
      * @param array       $options
      *
-     * @return float|null
+     * @return float
      */
-    public function calculate(ConsumeRule $consumeRule, array $options = [])
+    public function calculate(ConsumeRule $consumeRule, array $options = []): float
     {
         $payload = $consumeRule->payload;
 
@@ -46,11 +46,6 @@ class FrequencyConsumeRule implements ConsumeRuleContract
         $diff = $options->start->diff($options->end);
         $diff = $this->getDateIntervalPropertyByUnit($diff, $payload->frequency_unit) / $payload->frequency_value;
         $cyclePassed = intval($diff);
-
-        // Frequency has not been reached
-        if ($cyclePassed === 0) {
-            return null;
-        }
 
         return $cyclePassed;
     }
