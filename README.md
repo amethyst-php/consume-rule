@@ -1,6 +1,6 @@
 # amethyst-consume-rule
 
-[![Build Status](https://travis-ci.org/amethyst-php/consume-rule.svg?branch=master)](https://travis-ci.org/amethyst-php/consume-rule)
+[![Action Status](https://github.com/amethyst-php/consume-rule/workflows/test/badge.svg)](https://github.com/amethyst-php/consume-rule/actions)
 
 [Amethyst](https://github.com/amethyst-php/amethyst) package.
 
